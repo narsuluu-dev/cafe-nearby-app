@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafe Details – Cafe Nearby</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">  
+</head>
+<body> 
+    <header>
+        <h1>Cafe-Detailes</h1>
+    </header> 
+
+<main> 
+    <!--image --> 
+
+    <section class="details-info">
+        <h2>Miss Cafe</h2>
+        <p class="rating">⭐ 4.5 &nbsp; • &nbsp; $$ &nbsp; • &nbsp; 0.5 km away</p>
+        <p class="adress">800 East Thomas Street. Seattle</p>
+
+        <p class="description">
+            Cozy and modern cafe offering fresh pastries, locally roasted coffee, and free Wi-Fi.
+            Perfect spot for a quiet study session or casual meet-up.
+        </p> 
+
+        <div class="details-actions">
+            <button class="detailes-btn" onclick="history.back()">Back</button>
+            <button class="icon-btn fav-btn">❤️</button>
+        </div>
+    </section>
+
+
+</main> 
+
+<!--Bottom Navigation--> 
+<nav>
+  <a href="{{ url_for('home') }}"><br>Home</a>
+  <a href="{{ url_for('favourites') }}"><br>Favourites</a>
+  <a href="{{ url_for('random') }}"><br>Random</a>
+  <a href="{{ url_for('settings') }}"><br>Settings</a>
+</nav>
+
+
+
+</body>
+</html> 

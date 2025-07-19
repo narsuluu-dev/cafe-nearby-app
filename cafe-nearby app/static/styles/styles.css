@@ -1,0 +1,397 @@
+/* Reset + Font */ 
+
+* { 
+  box-sizing: border-box; 
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+
+}   
+
+/* Base Body */ 
+body {  
+  max-width: 430px; 
+  background: #f3f4f6; 
+  padding: 20px;
+  max-width: 430px;
+  margin: 0 auto;
+}  
+
+/* Title */ 
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+
+/*  Search Bar */
+.search-bar { 
+ padding: 12px; 
+ border-radius: 12x; 
+ border: 1px solid #ccc;
+ font-size: 1rem; 
+ border-radius: 12px;  
+ flex: 1;
+}
+
+
+
+/* Random Pick */ 
+.random-pick {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background: white;
+  color: #c95715;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+} 
+
+.random-btn { 
+  background: #c95715;
+  border: none ; 
+  border-radius: 10px; 
+  color: white; 
+  width: 100%;
+
+}
+
+.cafe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.cafe-info {
+  padding: 15px;
+}
+
+.cafe-info h3 {
+  margin-bottom: 8px;
+
+}
+
+.rating {
+  color: #e69200; 
+  margin-bottom: 5px; 
+}
+
+.address {
+  font-size:0.85rem;
+  color: #666;
+  margin-bottom: 10px; 
+}
+
+.details-btn { 
+  display: block; 
+  text-align: center;
+  background:#c95715;
+  color: white;
+  padding: 10px; 
+  border: none;
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;/* Remove underline */
+
+
+} 
+
+/* Bottom Navigation */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #c95715;
+  display: flex;
+  justify-content: space-around; 
+  padding: 12px 0;
+  color: white; 
+  font-size: 0.85rem;
+  z-index: 999;
+ 
+}  
+
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+} 
+
+
+
+
+/* Styling Settings page */
+
+.settings-section {
+  background: white; 
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 16px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}  
+
+.settings-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}  
+
+/* Toggle Switch */ 
+
+.switch { 
+  position: relative;
+  display: inline-block; 
+  width: 50px;
+  height: 28px; 
+} 
+
+.switch input {
+  opacity: 0;
+  width:0;
+  height: 0;
+  
+}
+
+.slider { 
+  position:absolute; 
+  cursor:pointer;  
+  background-color: #ccc; 
+  border-radius: 28px; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  transition: background-color 0.3s; 
+
+}  
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 22px; 
+  width: 22px;
+  background-color: white ;
+  border-radius: 50%; 
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s;
+}
+
+.switch input:checked + .slider {
+  background-color: #c95715;
+
+} 
+
+.switch input:checked + .slider::before {
+  transform: translateX(22px); 
+}  
+
+/* Styled Select Dropdown */ 
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+}  
+
+
+/* Filters page */
+
+.filters-section {
+  background: white ;
+  padding: 6px;
+  margin-bottom: 15px;
+  border-radius: 16px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.filters-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+
+} 
+
+.search-btn,
+.filter-btn {
+  background: #c95715; 
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px; 
+}  
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  width: 100%; 
+}
+
+
+/* Pill Buttons */ 
+
+.pill-container {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  padding: 8px 16px; 
+  background: #eee;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+
+}  
+
+.pill:hover {
+  background: #c95715;
+  color:white; 
+} 
+
+/*  Sliders */ 
+
+.range-slider {
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+
+/* Apply Button */  
+
+.apply-btn {
+  width: 100%;
+  padding: 14px;
+  background: #c95715;
+  color: white;
+  font-size: 1rem; 
+  cursor: pointer; 
+  border: none; 
+  border-radius: 12px;
+} 
+
+
+/* Fav Page */   
+
+.fav-actions {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}  
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+   transition: background-color 0.2s; 
+}
+ 
+
+.icon-btn:hover {
+  background-color: #f0f0f0; 
+
+}
+
+.delete-btn {
+  color: #c40000; 
+}
+
+.fav-btn {
+  color:#c95715;
+} 
+
+
+.icons {
+  display: flex;
+  gap: 10px;
+}  
+
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}  
+
+
+/* Cafe - Detailes page */ 
+
+.details-image {
+  width: 100%;
+  height: 200%;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 15px;
+
+}
+
+
+.details-info {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+
+}
+
+.details-info h2 {
+  margin-bottom: 8px;
+
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555
+}
+ 
+
+.details-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}  
+
+.details-actions .details-btn {
+  background: #c95715;
+  color: white;
+  padding: 10px 16px;
+  border: none; 
+  border-radius: 12px;
+  cursor: pointer;
+} 

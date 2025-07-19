@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafe Nearby – Filters</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">  
+</head>
+<body> 
+
+
+<header>
+    <h1>Filter Cafes</h1>
+</header>
+
+<main> 
+ <section class="filters-section">
+    <h2>Cuisine</h2>
+    <div class="pill-container">
+        <button class="pill">Bakery</button>
+        <button class="pill">Coffee</button> 
+        <button class="pill">Asian</button> 
+        <button class="pill">Mexican</button> 
+        <button class="pill">Italian</button> 
+        <button class="pill">Vegan</button>    
+    </div>
+ </section> 
+
+ <!--Rating-->
+
+ <section class="filters-section">
+  <h2>Minimum Rating</h2>
+  <select>
+    <option value="0">Any</option>
+    <option value="3">⭐ 3+</option>
+     <option value="4">⭐ 4+</option>
+    <option value="4.5">⭐ 4.5+</option>
+  </select>
+ </section>
+ 
+ <!--Distance-->
+<section class="filters-section">
+  <h2>Distance</h2>
+  <input type="range" min="0.5" step="0.5" class="range-slider">
+</section>   
+
+<!--Apply button-->
+
+<section class="filters-section">
+  <button class="apply-btn" onclick="location.href='filters-results.html'" aria-label="Apply">Apply Filters</button>
+</section>
+
+</main>
+
+
+<!--Bottom Navigation--> 
+<nav class="bottom-nav">
+  <a href="{{ url_for('home') }}"><br>Home</a>
+  <a href="{{ url_for('favourites') }}"><br>Favourites</a>
+  <a href="{{ url_for('random') }}"><br>Random</a> 
+  <a href="{{ url_for('settings') }}"><br>Settings</a>  
+</nav> 
+
+
+
+</body>
+</html> 

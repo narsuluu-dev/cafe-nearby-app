@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Bellden Cafe",
+    "address": "10527 Main St, Bellevue, WA 98004",
+    "rating": 4.6,
+    "image": "bellden.jpg" 
+  },
+  {
+    "id": 2,
+    "name": "Lune Cafe",
+    "address": "107 1st Ave S, Seattle, WA 98104",
+    "rating": 4.8,
+    "image": "lune.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Storyville Coffee Pike Place",
+    "address": "94 Pike St Top floor Suite 34, Seattle, WA 98101",
+    "rating": 4.6,
+    "image": "storyville.jpg"
+  },
+  {
+    "id": 4,
+    "name": "One Million Cafe",
+    "address": "323 N 105th St Suite B, Seattle, WA 98133",
+    "rating": 4.7,
+    "image": "onemillion.jpg"
+  },
+  {
+    "id": 5,
+    "name": "NEKO Cat Cafe Seattle",
+    "address": "519 E Pine St, Seattle, WA 98122",
+    "rating": 4.8,
+    "image": "neko.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Cafe Allegro",
+    "address": "Alleyway, 4214 University Wy NE, Seattle, WA 98105",
+    "rating": 4.5,
+    "image": "allegro.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Miss Cafe",
+    "address": "1523 1st Ave, Seattle, WA 98101",
+    "rating": 4.6,
+    "image": "miss-cafe.jpg"
+  }
+]

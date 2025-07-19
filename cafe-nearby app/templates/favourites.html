@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Favourites – Cafe Nearby</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">  
+</head>
+<body> 
+
+  <header> 
+    <h1>Favourites</h1> 
+  </header>
+
+  <main>
+    <!-- Reusable Cafe Card -->
+    <section class="cafe-card">
+      <img src="" alt="Miss Cafe" />
+      <div class="cafe-info">
+        <h3>Cafe Name</h3>
+        <p class="rating">⭐ 4.5 &nbsp; • &nbsp; $$ &nbsp; • &nbsp; 0.5 km away</p> 
+        <p class="address">Address</p>
+        <div class="fav-actions"> 
+          
+              <a href="{{ url_for('cafe_detailes') }}" class="details-btn">Show details</a>  
+              <!-- updated button for a flask-->       
+
+          <div class="icons">
+            <button class="icon-btn delete-btn" aria-label="DeleteCafe">🗑️</button>
+            <button class="icon-btn fav-btn" aria-label="FavouriteCafe">❤️</button>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Duplicated one more time for now -->
+    <section class="cafe-card">
+      <img src="" alt="Miss Cafe" />
+      <div class="cafe-info">
+        <h3>Cafe Name</h3>
+        <p class="rating">⭐ 4.5 &nbsp; • &nbsp; $$ &nbsp; • &nbsp; 0.5 km away</p> 
+        <p class="address">Address</p>
+        <div class="fav-actions">
+
+          <a href="{{ url_for('cafe_detailes') }}" class="details-btn">Show details</a>  
+              <!-- updated button for a flask-->
+
+          <div class="icons">
+            <button class="icon-btn delete-btn" aria-label="DeleteCafe">🗑️</button>
+            <button class="icon-btn fav-btn" aria-label="FavouriteCafe">❤️</button>          
+          </div>
+        </div>
+      </div> 
+    </section>
+  </main>
+
+<!--Bottom Navigation--> 
+<nav class="bottom-nav">
+  <a href="{{ url_for('home') }}"><br>Home</a>
+  <a href="{{ url_for('favourites') }}"><br>Favourites</a>
+  <a href="{{ url_for('random') }}"><br>Random</a> 
+  <a href="{{ url_for('settings') }}"><br>Settings</a>  
+</nav> 
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafe-Nearby - Settings </title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">  
+</head>
+<body>
+
+<header> 
+<h1>Settings</h1>
+</header>
+
+<main>
+<section class="settings-section">
+<h2>Notifications</h2>
+<label class="switch">
+  <input type="checkbox" id="toggleNotifications">
+  <span class="slider"></span>
+</label>
+</section>
+
+<section class="settings-section">
+  <h2>Language</h2>
+  <select id="languageSelect">
+    <option value="en">English</option>
+    <option value="es">Español</option>
+    <option value="fr">Français</option>
+    <option value="de">Deutsch</option>
+    <option value="ru">Русский</option>
+    <option value="zh">中文</option>
+    <option value="ja">日本語</option>
+    <option value="ar">العربية</option>
+    <option value="hi">हिन्दी</option>
+    <option value="pt">Português</option>
+  </select>
+</section>  
+
+<section class="settings-section">
+  <h2>Location</h2>
+  <select id="locationSelect">
+    <option value="auto">Use current location</option>
+    <option value="manual">Enter manually</option>
+  </select>
+</section> 
+</main>
+
+
+<!--Bottom Navigation--> 
+<nav class="bottom-nav">
+  <a href="{{ url_for('home') }}"><br>Home</a>
+  <a href="{{ url_for('favourites') }}"><br>Favourites</a>
+  <a href="{{ url_for('random') }}"><br>Random</a> 
+  <a href="{{ url_for('settings') }}"><br>Settings</a>  
+</nav> 
+
+</body>
+</html>
