@@ -16,10 +16,10 @@
     <div class="search-wrapper">
       <form action="{{ url_for('search_results') }}" method="GET" class="search-form">
         <input type="text" name="query" class="search-bar" placeholder="Search cafe.." />
-        <button type="submit" class="search-btn" aria-label="Search">🔍</button>
+        <button type="submit" class="search-btn" aria-label="Search">🔍</button>         
       </form>
       <button type="button" class="filter-btn" onclick="location.href='{{ url_for('filters') }}'" aria-label="Filter cafes">⚙️</button>
-    </div>
+    </div>   <!--Updated a search buton for a flask to run --> 
   </div>
 </header>  
 
