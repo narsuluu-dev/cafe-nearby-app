@@ -1,2 +1,17 @@
 # Auto detect text files and perform LF normalization
 * text=auto 
+
+# Normalize line endings
+* text=auto
+
+# Treat images and binary files properly (no line-ending conversion)
+*.jpg binary
+*.jpeg binary
+*.png binary
+
+# Explicitly mark these as text files
+*.html text
+*.css text
+*.py text
+*.json text
+*.md text  
