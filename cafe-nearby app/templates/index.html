@@ -18,9 +18,12 @@
         <input type="text" name="query" class="search-bar" placeholder="Search cafe.." />
         <button type="submit" class="search-btn" aria-label="Search">🔍</button>         
       </form>
-      <button type="button" class="filter-btn" onclick="location.href='{{ url_for('filters') }}'" aria-label="Filter cafes">⚙️</button>
+
+      <a href="{{ url_for('filters') }}" class="filter-btn" aria-label="Filter cafes">⚙️</a> 
+
+    
     </div>   <!--Updated a search buton for a flask to run --> 
-  </div>
+  </div>  
 </header>  
 
 <!--Random Pick Card-->
