@@ -46,9 +46,9 @@ def search_results():
 def settings():
     return render_template("settings.html") 
 
-@app.route('/cafe-detailes')  # keeping custom spelling
-def cafe_detailes():
-    return render_template("cafe-detailes.html") 
+@app.route('/cafe-details')  # keeping custom spelling
+def cafe_details():
+    return render_template("cafe-details.html") 
 
 if __name__ == '__main__': 
     app.run(debug=True, use_reloader=False)
